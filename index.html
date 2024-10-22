@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles/styles.css">
+    <link rel="stylesheet" href="/css/themes/grape-theme.css">
+    <link rel="stylesheet" href="/css/themes/grape-bg.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://github.com/fe-fe/fariafu" target="_blank"></a>
+            <span class="title">fariafu</span>
+        </a>
+        <div class="navlinks">
+            <a href="https://github.com/fe-fe/fariafu" target="_blank">
+                <button>GitHub</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="navfooter"></div>
+
+    <div class="content">
+        <div class="box p2 fade2 flex gap1 sm-break">
+            <div class="minibox p2">
+
+                <div class="title-row jussb gap1 alc">
+                    <span class="title">pergunta</span>
+                    <div id="btns" class="flex alc gap1">
+                        <button id="randbtn" class="fade1 f-medium">random</button>
+                        <button id="askbtn" class="fade1 f-medium">perguntar</button>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="flexc gap1">
+                    <textarea id="pergunta" type="text" spellcheck="false" autocomplete="off" class="basic f-medium flexc max" placeholder="faca sua pergunta aqui..."></textarea>
+
+                    
+                </div>
+
+            </div>
+            <div class="minibox p2">
+                <div class="title-row">
+                    <span>resposta da Gemini</span>
+                </div>
+                <hr class="separator mbl1">
+                <span id="resposta"></span>
+                
+             
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
