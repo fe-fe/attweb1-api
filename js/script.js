@@ -11,7 +11,7 @@ const randbtn = document.getElementById("randbtn");
 
 async function pergunta_random() {
     pergunta.classList.remove("erro");
-    const result = await model.generateContent("me de apenas um tema aleatorio, bobo, engracado ou ludico para eu te perguntar sobre, retorne 'fale sobre' + tema");
+    const result = await model.generateContent("me de apenas um tema aleatorio para eu te perguntar sobre, retorne 'fale sobre' + tema");
     const p = result.response.candidates[0].content.parts[0].text;
     escrever(p, pergunta);
     return p;

@@ -104,7 +104,7 @@ body {
     background: linear-gradient(to bottom, var(--color2) 0, var(--color3) 40%, var(--white1));
 }
 
-button {
+button.basic {
     border: 1px solid var(--color5);
     padding: .6vh 0.7vh;
     cursor: pointer;
@@ -113,7 +113,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+button.basic:hover {
     box-shadow: 0px 0px 8px var(--black2);
     transition: 0.3s;
 }
@@ -187,9 +187,18 @@ hr.separator {
     box-shadow: 0px 0px 20px var(--black1);
 }
 
-.navbar span.title {
+.navbar button.title {
+    border: none;
     font-size: xx-large;
     color: var(--black1);
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+
+.navbar button.title:hover {
+    color: var(--color5);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .navbar button {
