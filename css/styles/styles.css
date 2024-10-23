@@ -60,6 +60,10 @@ body {
     font-size: 1rem;
 }
 
+.f-xlarge {
+    font-size: x-large;
+}
+
 .t-center {
     text-align: center;
 }
@@ -202,11 +206,10 @@ hr.separator {
 }
 
 .navbar button {
-    flex-grow: 1;
     color: var(--black1);
     border: 1px solid var(--black1);
-    font-size: x-large;
     border-radius: 10px;
+
 }
 
 .navfooter {
@@ -253,4 +256,13 @@ textarea.basic:hover, textarea.basic:focus {
 
 .erro {
     border: 1px solid rgb(253, 103, 153) !important;
+}
+
+#temabt {
+    padding: 0px;
+    border: none;
+}
+
+#temabt:hover {
+    cursor: pointer;
 }

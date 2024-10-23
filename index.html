@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles/styles.css">
-    <link rel="stylesheet" href="/css/themes/grape-theme.css">
-    <link rel="stylesheet" href="/css/themes/grape-bg.css">
+    <link id="tema" rel="stylesheet" href="/css/themes/grape-theme.css">
+    <link id="bg" rel="stylesheet" href="/css/themes/grape-bg.css">
     <script type="importmap">
         {
           "imports": {
@@ -17,12 +17,16 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="https://github.com/fe-fe/fariafu" target="_blank">
-            <button class="title">fariafu</button>
-        </a>
+        
+        <div class="flex alc">
+            <a href="https://github.com/fe-fe/fariafu" target="_blank">
+                <button class="title">fariafu</button>
+            </a>
+            <button id="temabt" class="f-xlarge">🍒</button>
+        </div>
         <div class="navlinks">
             <a href="https://github.com/fe-fe/attweb1-api" target="_blank">
-                <button class="basic">GitHub</button>
+                <button class="basic f-xlarge">GitHub</button>
             </a>
         </div>
     </div>
@@ -60,5 +64,6 @@
         </div>
     </div>
     <script type="module" src="js/script.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 </html>
